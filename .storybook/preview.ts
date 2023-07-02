@@ -1,4 +1,4 @@
-import '../src/styles/global-styles';
+import '../tailwind.config';
 
 export const parameters = {
   parameters: {
