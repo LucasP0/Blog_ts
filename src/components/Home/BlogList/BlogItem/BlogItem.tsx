@@ -21,7 +21,7 @@ export const BlogItem = ({
 }: IBlogItemProps) => {
   return (
     // blogItem wrap
-    <div className="flex flex-col mt-20">
+    <div className="flex flex-col mt-20 p-2">
       <img
         className=" w-full h-64 object-cover rounded-md mb-2 hover:scale-105"
         src={cover}
@@ -40,7 +40,7 @@ export const BlogItem = ({
             src={authorAvatar}
             alt="avatar"
           />
-          <div className="text-xs text-[#a9a9] font-semibold">
+          <div className="text-xs text-gray-500 font-semibold">
             <h3>{authorName}</h3>
             <p>{createdAt}</p>
           </div>
