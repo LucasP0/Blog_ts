@@ -8,7 +8,7 @@ export const SearchBar = ({
 }: any) => {
   return (
     // class searchBar-wrap
-    <div className="flex items-center justify-center w-fit rounded-sm">
+    <div className="flex items-center justify-center  rounded-sm ">
       <form onSubmit={formSubmit} className="flex flex-row items-center p-4">
         <div className="border-2 border-black/40 p-1 border-r-0 outline-none flex flex-row bg-[#f0f0f0]">
           <Search size={30} color="#a9a9a9" />
