@@ -1,10 +1,6 @@
 import * as React from 'react';
+import { BlogComponent } from './blogComponent';
 
 export const Blog = () => {
-  return (
-    <div>
-      <h1>Tudo certo </h1>
-      <div>EU TENHO QUE ALTERAR OS OCOMPONENTELS E NÃO A HOME</div>
-    </div>
-  );
+  return <BlogComponent />;
 };

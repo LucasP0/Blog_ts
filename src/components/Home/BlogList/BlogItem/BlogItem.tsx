@@ -22,11 +22,13 @@ export const BlogItem = ({
   return (
     // blogItem wrap
     <div className="flex flex-col mt-20 p-2">
-      <img
-        className=" w-full h-64 object-cover rounded-md mb-2 hover:scale-105"
-        src={cover}
-        alt="cover"
-      />
+      <Link className="no-underline text-inherit" to={`/blog/${id}`}>
+        <img
+          className=" w-full h-64 object-cover rounded-md mb-2 hover:scale-105"
+          src={cover}
+          alt="cover"
+        />
+      </Link>
       <Chip label={category} />
       <h3 className="m-2 flex-1 font-extrabold text-lg">{title}</h3>
       <p className="relative max-h-14 overflow-hidden text-sm text-[#a9a9a] before:absolute before:content-['...'] before:bottom-0 before:right-0">
