@@ -24,7 +24,7 @@ export const BlogItem = ({
     <div className="flex flex-col mt-20 p-2">
       <Link className="no-underline text-inherit" to={`/blog/${id}`}>
         <img
-          className=" w-full h-64 object-cover rounded-md mb-2 hover:scale-105"
+          className=" w-[500px] h-[350px] max-lg:h-64 object-cover rounded-md mb-2 hover:scale-105"
           src={cover}
           alt="cover"
         />

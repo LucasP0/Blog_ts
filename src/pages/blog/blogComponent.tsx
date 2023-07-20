@@ -39,7 +39,7 @@ export const BlogComponent = () => {
       </Link>
 
       {blog ? (
-        <div className="w-[900px] flex flex-col  justify-center items-center m-auto">
+        <div className="w-[900px] max-md:w-full flex flex-col  justify-center items-center m-auto">
           <header className="text-center">
             <p className="text-xl text-[#a9a9] font-medium">
               Published {blog.createdAt}
@@ -55,7 +55,7 @@ export const BlogComponent = () => {
           </header>
           <div className="flex flex-col items-center justify-center gap-6">
             <img className="w-full rounded-sm" src={blog.cover} alt="cover" />
-            <p className="text-justify">{blog.description}</p>
+            <p className="text-justify max-md:p-4">{blog.description}</p>
           </div>
         </div>
       ) : (

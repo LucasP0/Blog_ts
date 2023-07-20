@@ -9,7 +9,7 @@ export interface IBlogListProps {
 export const BlogList = ({ blogs }: IBlogListProps) => {
   return (
     // BlogList-wrap
-    <div className="grid grid-cols-3 gap-12 max-md:grid-cols-2 max-sm:grid-cols-1">
+    <div className="grid grid-cols-4 gap-10 max-lg:grid-cols-3 max-sm:grid-cols-1">
       {blogs.map((blog: any) => (
         <BlogItem blog={blog} key={blog.id} />
       ))}
